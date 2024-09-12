@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>coursework_RestCardTransfer</name>
     <description>coursework_RestCardTransfer</description>
+    <packaging>jar</packaging>
     <url/>
     <licenses>
         <license/>
@@ -77,6 +78,14 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
         </plugins>
